@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eid Mubarak Message Generator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Eid Mubarak Message Generator</h1>
+        <div class="message">
+            <p>{{ message }}</p>
+        </div>
+        <div class="refresh">
+            <a href="{{ url_for('generate_message') }}">Get a New Message</a>
+        </div>
+    </div>
+</body>
+</html>
